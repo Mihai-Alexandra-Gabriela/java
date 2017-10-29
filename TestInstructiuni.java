@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class TestInstructiuni {
+	public static void main (String args[]) {
+		Scanner s = new Scanner(System.in); // citim text de la tastatura
+		System.out.println("Introduce-ti un nr: ");
+		int x = s.nextInt(); // in x se retine nr tastat
+		System.out.println("Rezultatul functiei este: "+ test(x));
+	}
+	
+	public static int test(int x) {
+		int suma = 0;
+		for(int i = 0; i < 4; i++) {
+			System.out.println("Am intrat in nivelul 1");
+			int j =0;
+			while(j++ <x) {
+				System.out.println("Am intrat in nivelul 2");
+				System.out.println("i= " + i + "; j= " +j);
+				switch(i) {
+				case 0:
+					continue;
+				case 1:
+					continue;
+				case 2:
+					continue;
+				case 3:
+					suma += i+j;
+					break;
+				}
+			}
+			System.out.println("Am iesit din nivelul 2");
+		}
+		System.out.println("Am iesit din nivelul 1");
+		return suma;
+	}
+}
