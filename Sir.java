@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Sir {
 	public static void main (String args[]) {
-		Scanner s = new Scanner(System.in); // citim text de la tastatura
+		Scanner s = new Scanner(System.in); 
 		System.out.println("Introduce-ti un sirul: ");
 		String word = s.nextLine();
 		
