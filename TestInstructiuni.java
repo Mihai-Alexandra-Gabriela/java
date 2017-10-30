@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class TestInstructiuni {
 	public static void main (String args[]) {
-		Scanner s = new Scanner(System.in); // citim text de la tastatura
+		Scanner s = new Scanner(System.in); 
 		System.out.println("Introduce-ti un nr: ");
-		int x = s.nextInt(); // in x se retine nr tastat
+		int x = s.nextInt(); 
 		System.out.println("Rezultatul functiei este: "+ test(x));
 	}
 	
